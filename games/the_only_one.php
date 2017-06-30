@@ -17,7 +17,7 @@ $connection_string = getenv('MONGODB_URI');
 $client = new MongoDB\Client($connection_string);
 
 // Fetch from games db gamestates collection
-$collection = $client->games->gamestates;
+$collection = $client->heroku_33jkhqcq->gamestates;
 
 if($request_method === "GET") {
 	// Fin the game status
