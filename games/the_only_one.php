@@ -8,6 +8,7 @@
 require '../vendor/autoload.php';
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Content-Type");
 header('Access-Control-Allow-Methods: PUT, GET');
 
 //TODO: Refactor into objects if there's time
