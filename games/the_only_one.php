@@ -13,7 +13,8 @@ header('Content-Type: application/json');
 $request_method = $_SERVER['REQUEST_METHOD'];
 
 // Mongo connection
-$client = new MongoDB\Client("mongodb://localhost:27017");
+$connection_string = getenv('MONGODB_URI');
+$client = new MongoDB\Client($connection_string);
 
 // Fetch from games db gamestates collection
 $collection = $client->games->gamestates;
