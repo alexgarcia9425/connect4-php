@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "023c76bd3315105bc8c3382d234ac1b3",
+    "content-hash": "68b8669683b7e28295a9ffdb9ff3dc77",
     "packages": [
         {
             "name": "mongodb/mongodb",
@@ -71,6 +71,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^5.6.0"
+    },
     "platform-dev": []
 }
